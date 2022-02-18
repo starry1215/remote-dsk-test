@@ -16,7 +16,7 @@
                 return;
             }
 
-            socket = io.connect('http://10.0.10.95:5000');
+            socket = io.connect('http://ec2-18-182-22-27.ap-northeast-1.compute.amazonaws.com:5000');
 
             socket.emit("join-message", room);
             socket.on('screen-data', function(message){

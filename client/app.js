@@ -3,11 +3,10 @@ const { v4: uuidv4 } = require('uuid');
 const screenshot = require('screenshot-desktop');
 var robot = require("robotjs");
 
-var socket = require('socket.io-client')('http://10.0.10.95:5000');
+var socket = require('socket.io-client')('http://ec2-18-182-22-27.ap-northeast-1.compute.amazonaws.com:5000');
 var interval;
 
 function createWindow () {
-    console.log('=== create electron window');
     const win = new BrowserWindow({
         width: 500,
         height: 150,
