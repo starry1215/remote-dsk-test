@@ -17,3 +17,7 @@ function stopShare(){
     document.getElementById("stop").style.display = "none";
     document.getElementById("start").style.display = "block";
 }
+
+function echo() {
+    ipcRenderer.send("echo", {});
+}
